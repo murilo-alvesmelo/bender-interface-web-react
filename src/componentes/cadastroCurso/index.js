@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styles from './CadastroCurso.module.css';
+import styles from './index.module.css';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Figure from 'react-bootstrap/Figure';
