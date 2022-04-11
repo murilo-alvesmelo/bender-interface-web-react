@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import styles from './CadastroCurso.module.css';
+import styles from './login.module.css';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Figure from 'react-bootstrap/Figure';
 
-class CadastroCurso extends Component{
+class telaLogin extends Component{
     render(){
         return(
             <div className={styles.container}>
@@ -20,22 +20,9 @@ class CadastroCurso extends Component{
                     </Figure.Caption>
                 </Figure>
 
-                <h1 className={styles.h1}>Cadastro</h1>
+                <h1 className={styles.h1}>Login</h1>
 
                 <Form >
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Control className={styles.forms} type="text" placeholder="Nome"/>
-                    </Form.Group>
-
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Select className={styles.forms}>
-                        <option>Curso</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </Form.Select>
-                    </Form.Group>
-
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Control className={styles.forms} type="email" placeholder="E-mail" />
                     </Form.Group>
@@ -48,11 +35,11 @@ class CadastroCurso extends Component{
                         Entrar
                     </Button>
 
-                    <p><a className={styles.login} href="#">Login</a></p>
+            
                 </Form>
             </div>
         );
     }
 
 }
-export default CadastroCurso;
+export default telaLogin;
