@@ -18,7 +18,6 @@ function App() {
       <Routes>
         <Route path="/Cadastro_curso" element={<CadastroCurso/>} />
         <Route path="/tela_inicial" element={<TelaInicial/>} />
-        <Route path="/inserir_info" element={<InserirInfo/>} />
       </Routes>
     </Router>
     </div>
