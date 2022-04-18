@@ -14,7 +14,6 @@ function App() {
     <div className={styles.App}>
     <Router>
       <Routes>
-        <Route path="/Cadastro_curso" element={<CadastroCurso/>} />
         <Route path="/tela_inicial" element={<TelaInicial/>} />
       </Routes>
     </Router>
