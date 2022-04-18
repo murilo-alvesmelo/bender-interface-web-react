@@ -8,7 +8,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './App.module.css'
 import CadastroCurso from './componentes/cadastroCurso/'
 import TelaInicial from './componentes/telaInicial'
-import InserirInfo from './componentes/inserirInformacoes'
 import NavBar from './layout/NavBar';
 
 function App() {
