@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import styles from './App.module.css'
+import CadastroCurso from './componentes/cadastroCurso/'
+import TelaInicial from './componentes/telaInicial'
+import InserirInfo from './componentes/inserirInformacoes'
+import NavBar from './layout/NavBar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.App}>
+    <Router>
+      <Routes>
+        <Route path="/Cadastro_curso" element={<CadastroCurso/>} />
+        <Route path="/tela_inicial" element={<TelaInicial/>} />
+        <Route path="/inserir_info" element={<InserirInfo/>} />
+      </Routes>
+    </Router>
     </div>
   );
 }
