@@ -1,12 +1,13 @@
 //CSS react-bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './App.module.css'
-import CadastroCurso from './componentes/cadastroCurso/'
+import TelaLogin from './componentes/telaLogin'
+
 
 function App() {
   return (
     <div className={styles.App}>
-      <CadastroCurso/>
+      <TelaLogin/>
     </div>
   );
 }
