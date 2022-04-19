@@ -7,7 +7,7 @@ import {
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './App.module.css'
 import TelaInicial from './componentes/telaInicial'
-import NavBar from './layout/NavBar';
+import EditarInfo from './componentes/editarInformacoes';
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/tela_inicial" element={<TelaInicial/>} />
+        <Route path="/editar_info" element={<EditarInfo/>} />
       </Routes>
     </Router>
     </div>

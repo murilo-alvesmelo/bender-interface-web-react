@@ -1,0 +1,23 @@
+{
+	
+	"Print to console": {
+	"scope": "javascript,typescript",
+	 	"prefix": "compfunc",
+	 	"body": [
+	 		"import React, { Component } from 'react';",
+			"import styles from './index.module.css'",
+			"",
+			"class Nome extends Component{",
+			"    render(){",
+			"        return(",
+			"            <>",
+			"            </>",
+			"        )",
+			"    }",
+			"}",
+			"export default Nome;",
+	 		"$2"
+	 	],
+	 	"description": "Log output to console"
+	}
+}
