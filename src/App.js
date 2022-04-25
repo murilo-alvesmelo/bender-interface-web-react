@@ -6,6 +6,8 @@ import {
 } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './App.module.css'
+import TelaInicial from './componentes/telaInicial'
+import EditarInfo from './componentes/editarInformacoes';
 import InserirInfo from './componentes/inserirInformacoes'
 import NavBar from './layout/NavBar';
 
@@ -14,6 +16,8 @@ function App() {
     <div className={styles.App}>
     <Router>
       <Routes>
+        <Route path="/tela_inicial" element={<TelaInicial/>} />
+        <Route path="/editar_info" element={<EditarInfo/>} />
         <Route path="/inserir_info" element={<InserirInfo/>} />
       </Routes>
     </Router>
