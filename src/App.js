@@ -9,6 +9,7 @@ import styles from './App.module.css'
 import TelaInicial from './componentes/telaInicial'
 import EditarInfo from './componentes/editarInformacoes';
 
+
 function App() {
   return (
     <div className={styles.App}>
