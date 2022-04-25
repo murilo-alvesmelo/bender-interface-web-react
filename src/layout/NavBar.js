@@ -21,6 +21,7 @@ class NavBar extends Component{
                         <Nav.Link href="/tela_inicial">Inicio</Nav.Link>
                         <Nav.Link href="/inserir_info">Inserir informações</Nav.Link>
                         <Nav.Link href="/editar_info">Editar informações</Nav.Link>
+                        <Nav.Link href="#pricing">Editar informações</Nav.Link>
                         </div>
                         <Button variant="outline-secondary" className={styles.button}>Sair</Button>{' '}
                     </Nav>
