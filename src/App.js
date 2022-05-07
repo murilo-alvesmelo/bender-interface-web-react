@@ -10,6 +10,7 @@ import TelaInicial from './componentes/telaInicial'
 import EditarInfo from './componentes/editarInformacoes';
 import InserirInfo from './componentes/inserirInformacoes'
 import EmailProfessores from './componentes/infoPersonalizadasEmailProf/index'
+import ContatosCoordenacao from './componentes/cadastroContatosCoordenacao';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/editar_info" element={<EditarInfo/>} />
         <Route path="/inserir_info" element={<InserirInfo/>} />
         <Route path='/email_professores' element={<EmailProfessores/>} />
+        <Route path='/contatos_coordenacao' element={<ContatosCoordenacao/>} />
       </Routes>
     </Router>
     </div>
