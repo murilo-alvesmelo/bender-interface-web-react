@@ -18,6 +18,7 @@ class NavBar extends Component{
                     <Navbar.Brand href="/tela_inicial">Bender Web</Navbar.Brand>
                     <Nav className="me-auto">
                         <div className={styles.navContainer}>
+                        <Nav.Link href="/atletica">Atlética</Nav.Link>
                         <Nav.Link href="/tela_inicial">Inicio</Nav.Link>
                         <Nav.Link href="/inserir_info">Inserir informações</Nav.Link>
                         <Nav.Link href="/editar_info">Editar informações</Nav.Link>
