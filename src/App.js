@@ -9,7 +9,7 @@ import styles from './App.module.css'
 import TelaInicial from './componentes/telaInicial'
 import EditarInfo from './componentes/editarInformacoes';
 import InserirInfo from './componentes/inserirInformacoes'
-import NavBar from './layout/NavBar';
+import InstagramCurso from './componentes/cadastroInstagramCurso';
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
         <Route path="/" element={<TelaInicial/>} />
         <Route path="/editar_info" element={<EditarInfo/>} />
         <Route path="/inserir_info" element={<InserirInfo/>} />
+        <Route path="/inserir_instagram" element={<InstagramCurso/>} />
       </Routes>
     </Router>
     </div>
