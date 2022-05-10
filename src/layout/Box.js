@@ -21,7 +21,7 @@ const Box = () => {
           navigate("/lalala");
         }}
       >
-        Lattes dos docentes{" "}
+        Lattes dos docentes
       </div>
       <div
         className={styles.btn}
