@@ -6,71 +6,71 @@ import Row from 'react-bootstrap/Row'
 import styles from './index.module.css';
 import { v4 as uuidv4 } from 'uuid';
 
-function EmailProfessores(){
+function ContatosCoordenacao(){
 
-    const [InputEmails, setInputEmails] = useState([
-        { id: uuidv4(), nome: '', email: '' },
+    const [InputContatos, setInputContatos] = useState([
+        { id: uuidv4(), email: '', telefone: '' },
     ]);
 
     const handleSubmit = (e) => {   
         e.preventDefault();
-        console.log("Emails", InputEmails);
+        console.log("Contatos", InputContatos);
     };
 
     const handleChangeInput = (id, event) => {
-        const newInputEmails = InputEmails.map(i => {
+        const newInputContatos = InputContatos.map(i => {
           if(id === i.id) {
             i[event.target.name] = event.target.value
           }
           return i;
         })
-        setInputEmails(newInputEmails);
+        setInputContatos(newInputContatos);
     }
 
-    const handleAddEmails = () => {
-        setInputEmails([...InputEmails, { id: uuidv4(),  nome: '', email: '' }])
+    const handleAddContatos = () => {
+        setInputContatos([...InputContatos, { id: uuidv4(),  email: '', telefone: '' }])
     }
 
-    const handleRemoveEmails = id => {
-        const values  = [...InputEmails];
+    const handleRemoveContatos = id => {
+        const values  = [...InputContatos];
         values.splice(values.findIndex(value => value.id === id), 1);
-        setInputEmails(values);
+        setInputContatos(values);
     }
     return(
         <>
             <NavBar/>
-            <h2 className={styles.h1}>E-mails dos Professores</h2>
+            <h2 className={styles.h1}>Contatos da Coordenação</h2>
             <Form onSubmit={handleSubmit}>
-            {InputEmails.map(inputEmail=>(
-                <div key={inputEmail.id}>
+            {InputContatos.map(inputContato=>(
+                <div key={inputContato.id}>
                     <Row className={styles.row}>
                         <Form.Control 
                             className={styles.input}
-                            name="nome"
+                            name="email"
                             type="text" 
-                            placeholder="Nome:"
-                            value={inputEmail.nome}
-                            onChange={event => handleChangeInput(inputEmail.id, event)}
+                            placeholder="E-mail:"
+                            value={inputContato.email}
+                            onChange={event => handleChangeInput(inputContato.id, event)}
                         />
                         <Form.Control
                             className={styles.input}
-                            name="email"
-                            type="text"
-                            placeholder="Email:"
-                            value={inputEmail.email}
-                            onChange={event => handleChangeInput(inputEmail.id, event)}
+                            name="telefone"
+                            type="tel"
+                            placeholder="Telefone:"
+                            value={inputContato.telefone}
+                            onChange={event => handleChangeInput(inputContato.id, event)}
                         />
                     <Button 
                         className={styles.button}
                         variant="primary"
-                        disabled={InputEmails.length === 1}
-                        onClick={() => handleRemoveEmails(inputEmail.id)}
+                        disabled={InputContatos.length === 1}
+                        onClick={() => handleRemoveContatos(inputContato.id)}
                     >Remover</Button>
 
                     <Button 
                         className={styles.button}
                         variant="primary"
-                        onClick={handleAddEmails}
+                        onClick={handleAddContatos}
                     >Novo</Button>
                     </Row>
                 </div>
@@ -90,4 +90,4 @@ function EmailProfessores(){
     )
 }
 
-export default EmailProfessores;
+export default ContatosCoordenacao;
