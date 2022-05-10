@@ -9,7 +9,7 @@ import styles from './App.module.css'
 import TelaInicial from './componentes/telaInicial'
 import EditarInfo from './componentes/editarInformacoes';
 import InserirInfo from './componentes/inserirInformacoes'
-import EmailProfessores from './componentes/infoPersonalizadasEmailProf/index'
+import EmailProfessores from './componentes/cadastroEmailProf/index'
 
 
 function App() {
