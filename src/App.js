@@ -11,6 +11,7 @@ import EditarInfo from './componentes/editarInformacoes';
 import InserirInfo from './componentes/inserirInformacoes'
 import EmailProfessores from './componentes/infoPersonalizadasEmailProf/index'
 
+
 function App() {
   return (
     <div className={styles.App}>
