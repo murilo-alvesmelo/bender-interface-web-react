@@ -24,7 +24,6 @@ function App() {
         <Route path="/inserir_instagram" element={<InstagramCurso/>} />
         <Route path='/lattes_docentes' element={<CadastroLattesDocentes/>} />
         <Route path='/contatos_coordenacao' element={<ContatosCoordenacao/>} />
-        <Route path='/email_professores' element={<EmailProfessores/>} />
       </Routes>
     </Router>
     </div>
