@@ -11,6 +11,7 @@ import EditarInfo from "./componentes/editarInformacoes";
 import InserirInfo from "./componentes/inserirInformacoes";
 import NavBar from "./layout/NavBar";
 import AtleticaCurso from "./componentes/atleticaCurso";
+import Atletica from './componentes/atleticaCurso'
 
 function App() {
   return (
