@@ -1,0 +1,21 @@
+.body{
+    padding-top: 30px;
+    height: 100vh;
+}
+.titulo{
+    text-align: center;
+    font-weight: bolder;
+    color: #FFF;
+    font-size: 20px;
+}
+
+.formfile{
+    padding: 20px;
+    margin: auto;
+    width: 50%;
+    color: #FFF;
+}
+
+.formfile1{
+    padding: 20px;
+}

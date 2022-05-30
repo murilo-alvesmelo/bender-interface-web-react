@@ -1,0 +1,52 @@
+.h1 {
+  color: #fff;
+  
+}
+
+input {
+  padding: 9px;
+  
+  background: #253341;
+  border: 0px;
+  display: block;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  width: 50%;
+  margin: 0px auto 22px;
+}
+input::placeholder{
+  color: #fff;
+}
+.input:hover {
+  background-color: #223141;
+}
+form button {
+  box-shadow: inset 0px 1px 0px 0px #7a8eb9;
+  
+  background: #1D9BF0;
+  border: 0px;
+  display: block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  width: 300px;
+  margin: 39px auto 0px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+form button:hover {
+
+  background: #167ec4;
+}
+form button:active {
+  position: relative;
+  top: 1px;
+}
