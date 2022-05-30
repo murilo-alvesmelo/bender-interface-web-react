@@ -10,10 +10,11 @@ const Box = () => {
 
   return (
     <>
+    <form action="#">
       <input
         type="text"
         value={nome}
-        placeholder="Nome"
+        placeholder="Nome:"
         onChange={(e) => {
           setNome(e.target.value);
         }}
@@ -22,7 +23,7 @@ const Box = () => {
       <input
         type="text"
         value={instagram}
-        placeholder="Instagram"
+        placeholder="Instagram:"
         onChange={(e) => {
           setInstagram(e.target.value);
         }}
@@ -31,7 +32,7 @@ const Box = () => {
       <input
         type="text"
         value={email}
-        placeholder="Email"
+        placeholder="E-mail:"
         onChange={(e) => {
           setEmail(e.target.value);
         }}
@@ -40,13 +41,17 @@ const Box = () => {
       <input
         type="text"
         value={telefone}
-        placeholder="Telefone"
+        placeholder="Telefone:"
         onChange={(e) => {
           setTelefone(e.target.value);
         }}
         className={styles.input}
       ></input>
-      <div className={styles.btn}>Enviar</div>
+      
+      
+      <button type="submit">Enviar</button>
+      
+      </form>
     </>
   );
 };

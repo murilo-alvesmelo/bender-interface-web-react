@@ -12,6 +12,7 @@ import InserirInfo from './componentes/inserirInformacoes'
 import InstagramCurso from './componentes/cadastroInstagramCurso';
 import CadastroLattesDocentes from './componentes/cadastroLattesDocentes';
 import ContatosCoordenacao from './componentes/cadastroContatosCoordenacao';
+import Atletica from './componentes/atleticaCurso'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/inserir_instagram" element={<InstagramCurso/>} />
         <Route path='/lattes_docentes' element={<CadastroLattesDocentes/>} />
         <Route path='/contatos_coordenacao' element={<ContatosCoordenacao/>} />
+        <Route path="/atletica" element={<Atletica />} />
       </Routes>
     </Router>
     </div>
