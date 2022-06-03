@@ -9,11 +9,10 @@ import styles from './App.module.css'
 import TelaInicial from './componentes/telaInicial'
 import EditarInfo from './componentes/editarInformacoes';
 import InserirInfo from './componentes/inserirInformacoes'
-import EmailProfessores from './componentes/cadastroEmailProf/index'
+import InstagramCurso from './componentes/cadastroInstagramCurso';
 import CadastroLattesDocentes from './componentes/cadastroLattesDocentes';
 import ContatosCoordenacao from './componentes/cadastroContatosCoordenacao';
-
-
+import Atletica from './componentes/atleticaCurso'
 
 function App() {
   return (
@@ -23,9 +22,10 @@ function App() {
         <Route path="/" element={<TelaInicial/>} />
         <Route path="/editar_info" element={<EditarInfo/>} />
         <Route path="/inserir_info" element={<InserirInfo/>} />
+        <Route path="/inserir_instagram" element={<InstagramCurso/>} />
         <Route path='/lattes_docentes' element={<CadastroLattesDocentes/>} />
         <Route path='/contatos_coordenacao' element={<ContatosCoordenacao/>} />
-        <Route path='/email_professores' element={<EmailProfessores/>} />
+        <Route path="/atletica" element={<Atletica />} />
       </Routes>
     </Router>
     </div>
