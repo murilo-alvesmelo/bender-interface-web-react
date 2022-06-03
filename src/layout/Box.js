@@ -10,7 +10,7 @@ const Box = () => {
       <div
         className={styles.btn}
         onClick={() => {
-          navigate("//google.com");
+          navigate("/email_professores");
         }}
       >
         Email dos professores
@@ -18,7 +18,7 @@ const Box = () => {
       <div
         className={styles.btn}
         onClick={() => {
-          navigate("/lalala");
+          navigate("/lattes_docentes");
         }}
       >
         Lattes dos docentes
@@ -26,7 +26,7 @@ const Box = () => {
       <div
         className={styles.btn}
         onClick={() => {
-          navigate("/lalala");
+          navigate("/contatos_coordenacao");
         }}
       >
         Contatos da coordenação
@@ -34,7 +34,7 @@ const Box = () => {
       <div
         className={styles.btn}
         onClick={() => {
-          navigate("/lalala");
+          navigate("/atletica");
         }}
       >
         Atletica do curso
@@ -42,7 +42,7 @@ const Box = () => {
       <div
         className={styles.btn}
         onClick={() => {
-          navigate("/lalala");
+          navigate("/inserir_instagram");
         }}
       >
         Perfis no instagram
