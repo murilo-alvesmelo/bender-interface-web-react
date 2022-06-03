@@ -22,6 +22,8 @@ function EmailProfessores(){
                     email: contato.email
                 })
         });
+        alert("Cadastrado!")
+        window.location.reload()
     };
 
     const handleChangeInput = (id, event) => {
