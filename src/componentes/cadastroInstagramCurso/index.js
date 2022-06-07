@@ -5,6 +5,7 @@ import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row'
 import styles from './index.module.css';
 import { v4 as uuidv4 } from 'uuid';
+import api from '../../services/Api';
 
 function InstagramCurso(){
 
@@ -12,9 +13,16 @@ function InstagramCurso(){
         { id: uuidv4(), perfil: '', link: '' },
     ]);
 
-    const handleSubmit = (e) => {   
-        e.preventDefault();
-        console.log("Instagrams", inputInstagrams);
+    const handleSubmit = (event) => {   
+        event.preventDefault();
+        inputInstagrams.map(i =>{
+            api.post('/instagram/adicionar_instagram', {
+                nome_do_perfil: i.perfil,
+                link: i.link
+            })
+        })
+        alert("Cadastrado")
+        window.location.reload()
     };
 
     const handleChangeInput = (id, event) => {
