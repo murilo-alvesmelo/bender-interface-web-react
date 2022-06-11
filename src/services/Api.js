@@ -1,4 +1,5 @@
-import axios from 'axios';
+
+import axios from 'axios'
 
 //Conexão com a API utilizando o AXIOS
 const api = axios.create({
@@ -8,4 +9,3 @@ const api = axios.create({
 });
 
 export default api
-
