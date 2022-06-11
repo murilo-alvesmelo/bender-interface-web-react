@@ -5,6 +5,7 @@ import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row'
 import styles from './index.module.css';
 import { v4 as uuidv4 } from 'uuid';
+import api from '../../services/Api';
 
 function ContatosCoordenacao(){
 
@@ -12,9 +13,16 @@ function ContatosCoordenacao(){
         { id: uuidv4(), email: '', telefone: '' },
     ]);
 
-    const handleSubmit = (e) => {   
-        e.preventDefault();
-        console.log("Contatos", InputContatos);
+    const handleSubmit = (event) => {   
+        event.preventDefault();
+        InputContatos.map(i => {
+                api.post('/contatosCoordenacao/contatosCoordenacao', {
+                    email: i.email,
+                    telefone: i.telefone
+                })
+        });
+        alert("Cadastrado!")
+        window.location.reload()
     };
 
     const handleChangeInput = (id, event) => {
