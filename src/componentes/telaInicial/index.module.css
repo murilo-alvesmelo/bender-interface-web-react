@@ -37,3 +37,44 @@
     border-radius: 10px;
     background-color: #C7CDCD;
 }
+
+@media all and (max-width: 1366px){
+    .imgContainer{
+        width: 100%;
+        height: 350px;
+    }
+    
+    .modalscontainer{
+        text-align: center;
+        width: 100%;
+        top: 350px;
+    }
+    
+    .modal1{
+        float: left;
+        width: 230px;
+        height: 200px;
+        border-radius: 10px;
+        background-color: #C7CDCD;
+    }
+    
+    .modal2{
+        margin-left: 50px;
+        float: left;
+        width: 230px;
+        height: 200px;
+        border-radius: 10px;
+        background-color: #C7CDCD;
+    }
+    
+    .modal3{
+        margin-left: 50px;
+        float: left;
+        width: 230px;
+        height: 200px;
+        border-radius: 10px;
+        background-color: #C7CDCD;
+    }
+    
+}
+
