@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./box.module.css";
+import { FaAngleRight } from "@react-icons/all-files/fa/FaAngleRight";
 
 const Box = () => {
   let navigate = useNavigate();
@@ -13,7 +14,8 @@ const Box = () => {
           navigate("/email_professores");
         }}
       >
-        Email dos professores
+        <p>E-mail dos professores</p>
+        <FaAngleRight/>
       </div>
       <div
         className={styles.btn}
@@ -21,7 +23,8 @@ const Box = () => {
           navigate("/lattes_docentes");
         }}
       >
-        Lattes dos docentes
+        <p>Lattes dos docentes</p>
+        <FaAngleRight/>
       </div>
       <div
         className={styles.btn}
@@ -29,7 +32,8 @@ const Box = () => {
           navigate("/contatos_coordenacao");
         }}
       >
-        Contatos da coordenação
+        <p>Contatos da coordenação</p>
+        <FaAngleRight/>
       </div>
       <div
         className={styles.btn}
@@ -37,7 +41,8 @@ const Box = () => {
           navigate("/atletica");
         }}
       >
-        Atletica do curso
+        <p>Atlética do curso</p>
+        <FaAngleRight/>
       </div>
       <div
         className={styles.btn}
@@ -45,7 +50,8 @@ const Box = () => {
           navigate("/inserir_instagram");
         }}
       >
-        Perfis no instagram
+        <p>Perfis no instagram</p>
+        <FaAngleRight/>
       </div>
     </>
   );
