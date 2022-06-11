@@ -5,16 +5,25 @@ import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row'
 import styles from './index.module.css';
 import { v4 as uuidv4 } from 'uuid';
+import api from '../../services/Api';
 
 function EmailProfessores(){
 
+    
     const [InputEmails, setInputEmails] = useState([
         { id: uuidv4(), nome: '', email: '' },
     ]);
 
-    const handleSubmit = (e) => {   
-        e.preventDefault();
-        console.log("Emails", InputEmails);
+    const handleSubmit = (event) => {   
+        event.preventDefault();
+        InputEmails.map(contato => {
+                api.post('/professores/professores', {
+                    nome: contato.nome,
+                    email: contato.email
+                })
+        });
+        alert("Cadastrado!")
+        window.location.reload()
     };
 
     const handleChangeInput = (id, event) => {
