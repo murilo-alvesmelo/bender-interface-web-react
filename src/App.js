@@ -14,6 +14,7 @@ import CadastroLattesDocentes from './componentes/cadastroLattesDocentes';
 import ContatosCoordenacao from './componentes/cadastroContatosCoordenacao';
 import EmailProfessores from './componentes/cadastroEmailProf';
 import Atletica from './componentes/atleticaCurso'
+import GradeHorarios from './componentes/gradeHorarios'
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path='/contatos_coordenacao' element={<ContatosCoordenacao/>} />
         <Route path='/email_professores' element={<EmailProfessores/>} />
         <Route path="/atletica" element={<Atletica />} />
+        <Route path="/grade_horarios" element={<GradeHorarios />} />
       </Routes>
     </Router>
     </div>
