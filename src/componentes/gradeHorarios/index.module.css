@@ -1,0 +1,125 @@
+.h1{
+  text-align: center;
+  color: #FFF;
+  padding: 20px;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: sans-serif;
+  line-height: 38px;
+  margin: 2rem auto;
+}
+
+.horarios{
+  color: #fff;
+  display: flex;
+  gap: 1rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  font-family: sans-serif;
+	font-size: 0.9rem;
+	font-weight: 500;
+	text-decoration: none;
+
+  margin-bottom: 1rem;
+}
+
+.periodo{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  background: #253341;
+	border: none;
+	border-radius: 8px;
+	gap: 1rem;
+}
+.periodo p{
+  margin-bottom: 0px;
+}
+.disciplina{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 250px;  
+  min-height: 45px;
+
+  padding: 10px 30px;
+
+  background: #253341;
+  border: none;
+  border-radius: 8px;
+  gap: 1rem;
+}
+
+.disciplina p{
+  margin-bottom: 0px;
+}
+
+.horario{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  background: #253341;
+	border: none;
+	border-radius: 8px;
+}
+
+.horario p{
+  margin-bottom: 0px;
+}
+
+.button{
+  border-radius: 8px;
+  height: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  background: #1D9BF0;
+	border: none;
+  color: #FFFFFF;
+}
+.button:hover{
+  background: #0b5ed7;
+}
+
+@media(max-width: 767px){
+  .horarios{
+    margin: auto 20px;
+    font-size: .8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+  } 
+  .periodo{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    min-width: 80px;
+    padding-left: 0px;
+   padding-right: 0px; 
+  
+    background: #253341;
+    border: none;
+    border-radius: 8px;
+    gap: .5rem;
+  }
+  .button{
+    margin-bottom: 1rem;
+  }
+}
