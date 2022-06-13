@@ -8,7 +8,7 @@ const MontarAxiosAPI = () => {
     if (localStorage.getItem('enc_jwt') !== null) {
         instance.defaults.headers.common['Authorization'] = `Bearer ${localStorage.getItem('enc_jwt')}`
     }
-    console.log(localStorage.getItem('enc_jwt'));
+    // console.log(localStorage.getItem('enc_jwt'));
     return instance
 }
 export default MontarAxiosAPI
