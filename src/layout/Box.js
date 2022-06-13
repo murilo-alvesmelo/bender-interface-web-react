@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./box.module.css";
 import { FaAngleRight } from "@react-icons/all-files/fa/FaAngleRight";
@@ -42,6 +42,15 @@ const Box = () => {
         }}
       >
         <p>Atlética do curso</p>
+        <FaAngleRight/>
+      </div>
+      <div
+        className={styles.btn}
+        onClick={() => {
+          navigate("/informes");
+        }}
+      >
+        <p>Informes</p>
         <FaAngleRight/>
       </div>
       <div

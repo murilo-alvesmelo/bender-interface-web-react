@@ -2,18 +2,18 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Navigate,
-} from 'react-router-dom'
+} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import styles from './App.module.css'
-import TelaInicial from './componentes/telaInicial'
+import styles from './App.module.css';
+import TelaInicial from './componentes/telaInicial';
 import EditarInfo from './componentes/editarInformacoes';
-import InserirInfo from './componentes/inserirInformacoes'
+import InserirInfo from './componentes/inserirInformacoes';
 import InstagramCurso from './componentes/cadastroInstagramCurso';
 import CadastroLattesDocentes from './componentes/cadastroLattesDocentes';
 import ContatosCoordenacao from './componentes/cadastroContatosCoordenacao';
 import EmailProfessores from './componentes/cadastroEmailProf';
-import Atletica from './componentes/atleticaCurso'
+import Atletica from './componentes/atleticaCurso';
+import Informes from './componentes/informes';
 
 function App() {
   return (
@@ -28,6 +28,7 @@ function App() {
         <Route path='/contatos_coordenacao' element={<ContatosCoordenacao/>} />
         <Route path='/email_professores' element={<EmailProfessores/>} />
         <Route path="/atletica" element={<Atletica />} />
+        <Route path="/informes" element={<Informes />} />
       </Routes>
     </Router>
     </div>
