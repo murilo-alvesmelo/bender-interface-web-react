@@ -26,7 +26,7 @@ const Login = () => {
                 .then(response => {
                     let resposta = response.data;
                     console.log(resposta)
-                    if (resposta.status && resposta.tipo_usuario == 2) {
+                    if (resposta.status && resposta.tipo_usuario === 2) {
                         localStorage.setItem("enc_jwt", resposta.access_token);
                         navigate("/")
                     } else {

@@ -2,6 +2,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
+  Navigate
 } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './App.module.css';
@@ -14,6 +15,7 @@ import ContatosCoordenacao from './componentes/cadastroContatosCoordenacao';
 import EmailProfessores from './componentes/cadastroEmailProf';
 import Atletica from './componentes/atleticaCurso';
 import Informes from './componentes/informes';
+import Login from './componentes/telaLogin'
 
 function App() {
   const Private = ({children}) => {
