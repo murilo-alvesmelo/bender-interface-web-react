@@ -2,8 +2,8 @@ import React from "react";
 import NavBar from "../../layout/NavBar";
 import styles from "../atleticaCurso/index.module.css";
 import Button from 'react-bootstrap/Button'
-import api from '../../services/Api';
 import { useState } from "react";
+import MontarAxiosAPI from '../../utilitarios/axios';
 
 const Informes = ()=>{
 
@@ -13,10 +13,13 @@ const Informes = ()=>{
 
     const handleSubmit = (event) => {
         event.preventDefault();
-            api.post('/informes/informes', {
+        const axiosApi = MontarAxiosAPI();
+        axiosApi.post('/informes/informes', {
                 remetente: nome,
                 aviso: message,
                 link: link
+            }).then(response=>{
+                console.log(response.data);
             })
             
             alert("Enviado!")

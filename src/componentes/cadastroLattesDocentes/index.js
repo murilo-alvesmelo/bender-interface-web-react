@@ -5,7 +5,6 @@ import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row'
 import styles from './index.module.css';
 import { v4 as uuidv4 } from 'uuid';
-import api from '../../services/Api';
 
 function LattesDocentes(){
 
@@ -16,10 +15,6 @@ function LattesDocentes(){
     const handleSubmit = (event) => {   
         event.preventDefault();
         inputLattes.map(i => {
-                api.post('/lattesDocente/lattesDocente', {
-                    nome: i.nome,
-                    lattes: i.lattes
-                })
         });
         alert("Lattes cadastrado!")
         window.location.reload()

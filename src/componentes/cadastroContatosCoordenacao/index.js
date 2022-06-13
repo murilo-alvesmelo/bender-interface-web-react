@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row'
 import styles from './index.module.css';
 import { v4 as uuidv4 } from 'uuid';
-import api from '../../services/Api';
+import MontarAxiosAPI from '../../utilitarios/axios';
 
 function ContatosCoordenacao(){
 
@@ -15,8 +15,9 @@ function ContatosCoordenacao(){
 
     const handleSubmit = (event) => {   
         event.preventDefault();
+        const axiosApi = MontarAxiosAPI();
         InputContatos.map(i => {
-                api.post('/contatosCoordenacao/contatosCoordenacao', {
+            axiosApi.post('/contatosCoordenacao/contatosCoordenacao', {
                     email: i.email,
                     telefone: i.telefone
                 })
