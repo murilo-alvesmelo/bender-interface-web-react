@@ -5,9 +5,13 @@ import Nav from 'react-bootstrap/Nav'
 import Logo from '../assets/logo.jpg'
 import styles from './NavBar.module.css'
 import Button from 'react-bootstrap/Button'
-
-class NavBar extends Component{
-    render(){
+import {useNavigate} from "react-router-dom"
+const NavBar = ()=>{
+        const navigate = useNavigate();
+        const handleLogout = ()=>{
+            localStorage.removeItem("enc_jwt")
+            navigate("/login")
+        }
         return(
             <>
             <Navbar style={{backgroundColor: '#253341'}}variant='dark'>
@@ -22,12 +26,12 @@ class NavBar extends Component{
                         <Nav.Link href="/inserir_info" className={styles.text}>Inserir informações</Nav.Link>
                         <Nav.Link href="/editar_info" className={styles.text}>Editar informações</Nav.Link>
                         </div>
-                        <Button variant="outline-secondary" className={styles.button}>Sair</Button>{' '}
+                        <Button variant="outline-secondary" className={styles.button} onClick={handleLogout}>Sair</Button>{' '}
                     </Nav>
                 </Container>
             </Navbar>
-            </>
-        )
+            </>    
+            )
     }
-}
+
 export default NavBar;
