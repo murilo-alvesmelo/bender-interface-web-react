@@ -16,19 +16,27 @@ import Atletica from './componentes/atleticaCurso';
 import Informes from './componentes/informes';
 
 function App() {
+  const Private = ({children}) => {
+    if(localStorage.getItem("enc_jwt")){
+        return children
+    }else{
+        return <Navigate to ="/login" />
+    }
+}
   return (
     <div className={styles.App}>
     <Router>
       <Routes>
-        <Route path="/" element={<TelaInicial/>} />
-        <Route path="/editar_info" element={<EditarInfo/>} />
-        <Route path="/inserir_info" element={<InserirInfo/>} />
-        <Route path="/inserir_instagram" element={<InstagramCurso/>} />
-        <Route path='/lattes_docentes' element={<CadastroLattesDocentes/>} />
-        <Route path='/contatos_coordenacao' element={<ContatosCoordenacao/>} />
-        <Route path='/email_professores' element={<EmailProfessores/>} />
-        <Route path="/atletica" element={<Atletica />} />
-        <Route path="/informes" element={<Informes />} />
+        <Route path="/" element={<Private><TelaInicial/></Private>} />
+        <Route path="/login" element={<Login/>} />
+        <Route path="/editar_info" element={<Private><EditarInfo/></Private>} />
+        <Route path="/inserir_info" element={<Private><InserirInfo/></Private>} />
+        <Route path="/inserir_instagram" element={<Private><InstagramCurso/></Private>} />
+        <Route path='/lattes_docentes' element={<Private><CadastroLattesDocentes/></Private>} />
+        <Route path='/contatos_coordenacao' element={<Private><ContatosCoordenacao/></Private>} />
+        <Route path='/email_professores' element={<Private><EmailProfessores/></Private>} />
+        <Route path="/atletica" element={<Private><Atletica /></Private>} />
+        <Route path="/informes" element={<Private><Informes /></Private>} />
       </Routes>
     </Router>
     </div>

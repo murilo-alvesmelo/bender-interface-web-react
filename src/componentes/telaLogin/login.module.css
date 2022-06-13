@@ -9,11 +9,18 @@
     top: 40px;
     padding: 20px 100px 20px 100px;
 }
-
+.fundo{
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
 .h1{
     color: #FFF;
     font-size: 32px;
     font-weight: bolder;
+    margin-bottom: 30px;
 }
 .imgSize{
     width: 150px;
@@ -25,14 +32,6 @@
 }
 .forms::placeholder{
     color: #212529;
-}
-.button{
-    font-weight: bolder;
-    text-align: center;
-    width: 300px;
-    height: 50px;
-    left: 490px;
-    top: 560px;
 }
 
 .login{
