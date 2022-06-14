@@ -24,6 +24,10 @@ function EmailProfessores(){
                     email: contato.email
                 }).then(response=>{
                   console.log(response.data);
+                  alert("Cadastrado")
+                  window.location.reload()
+                }).catch(e=>{
+                    alert("verifique os dados")
                 })
         });
     };
