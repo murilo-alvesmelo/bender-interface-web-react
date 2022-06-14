@@ -1,12 +1,10 @@
 .imgContainer{
-    position: absolute;
     width: 100%;
     height: 468px;
 }
 
 .modalscontainer{
     position: absolute;
-    text-align: center;
     width: 100%;
     top: 420px;
 }
