@@ -20,10 +20,14 @@ function ContatosCoordenacao(){
             axiosApi.post('/contatosCoordenacao/contatosCoordenacao', {
                     email: i.email,
                     telefone: i.telefone
-                })
-        });
-        alert("Cadastrado!")
-        window.location.reload()
+            }).then(response => {
+                console.log(response.data)
+                alert("Contato cadastrado")
+                window.location.reload()
+            }).cath(e=>{
+                alert("Verifique os dados")
+            })
+        })
     };
 
     const handleChangeInput = (id, event) => {
