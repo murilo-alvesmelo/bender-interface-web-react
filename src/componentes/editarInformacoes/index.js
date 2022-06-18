@@ -10,7 +10,6 @@ class EditarInfo extends Component{
             <NavBar/>
             <h1 className={styles.h1}>Inserir informações do Curso</h1>
             <Box />
-            <div className={styles.btn}>Hoi</div>
             </>
         )
     }
