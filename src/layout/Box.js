@@ -62,6 +62,15 @@ const Box = () => {
         <p>Perfis no instagram</p>
         <FaAngleRight/>
       </div>
+      <div
+        className={styles.btn}
+        onClick={() => {
+          navigate("/grade_horário");
+        }}
+      >
+        <p>Horários da Disciplina</p>
+        <FaAngleRight/>
+      </div>
     </>
   );
 };
