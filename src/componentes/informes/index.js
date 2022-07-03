@@ -19,11 +19,12 @@ const Informes = ()=>{
                 aviso: message,
                 link: link
             }).then(response=>{
-                console.log(response.data);
+                alert("Cadastrado!")
+                window.location.reload()
+            }).catch(e => {
+                alert("Verifique os dados!")
             })
             
-            alert("Enviado!")
-            window.location.reload()
         }
         
         return(

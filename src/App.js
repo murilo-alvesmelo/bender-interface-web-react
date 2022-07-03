@@ -26,7 +26,7 @@ function App() {
     }
 }
   return (
-    <div className={styles.App}>
+    <div className = {styles.background}>
     <Router>
       <Routes>
         <Route path="/" element={<Private><TelaInicial/></Private>} />
