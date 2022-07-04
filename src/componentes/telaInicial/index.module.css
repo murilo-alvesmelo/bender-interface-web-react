@@ -1,6 +1,7 @@
 .imgContainer{
     width: 100%;
-    height: 468px;
+    height: 500px;
+    background-color: #267CB5
 }
 
 .modalscontainer{
@@ -15,7 +16,11 @@
     width: 300px;
     height: 230px;
     border-radius: 10px;
-    background-color: #C7CDCD;
+    margin-bottom:50px;
+    background-image: url("../../../public/avisos.png");
+    background-position: center;
+    background-size: cover;
+    background-color: #87CB8F
 }
 
 .modal2{
@@ -24,7 +29,11 @@
     width: 300px;
     height: 230px;
     border-radius: 10px;
-    background-color: #C7CDCD;
+    margin-bottom:50px;
+    background-image: url("../../../public/email.png");
+    background-position: center;
+    background-size: cover;
+    background-color:#267CB5
 }
 
 .modal3{
@@ -33,13 +42,24 @@
     width: 300px;
     height: 230px;
     border-radius: 10px;
-    background-color: #C7CDCD;
+    margin-bottom:50px;
+    background-image: url("../../../public/lattes.png");
+    background-position: center;
+    background-size: 130px;
+    background-repeat: no-repeat;
+    background-color:#c7c7c7;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
 }
 
 @media all and (max-width: 1366px){
     .imgContainer{
         width: 100%;
-        height: 350px;
+        height: 60vh;
+        background-color: #267CB5
     }
     
     .modalscontainer{
@@ -53,7 +73,11 @@
         width: 230px;
         height: 200px;
         border-radius: 10px;
-        background-color: #C7CDCD;
+        margin-bottom:50px;
+        background-image: url("../../../public/avisos.png");
+        background-position: center;
+        background-size: cover;
+        background-color: #87CB8F
     }
     
     .modal2{
@@ -62,7 +86,11 @@
         width: 230px;
         height: 200px;
         border-radius: 10px;
-        background-color: #C7CDCD;
+        margin-bottom:50px;
+        background-image: url("../../../public/email.png");
+        background-position: center;
+        background-size: cover;
+        background-color:#267CB5
     }
     
     .modal3{
@@ -71,7 +99,17 @@
         width: 230px;
         height: 200px;
         border-radius: 10px;
-        background-color: #C7CDCD;
+        margin-bottom:50px;
+        background-image: url("../../../public/lattes.png");
+        background-position: center;
+        background-size: 130px;
+        background-repeat: no-repeat;
+        background-color:#c7c7c7;
+    }
+
+    a, a:hover, a:focus, a:active {
+        text-decoration: none;
+        color: inherit;
     }
     
 }

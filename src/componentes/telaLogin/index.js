@@ -48,7 +48,7 @@ const Login = () => {
   return (
     <div className={styles.fundo}>
       <div className={styles.container}>
-        <img src={logo} className={styles.imgSize} />
+        <img src={logo} className={styles.imgSize} alt="logo"/>
 
         <h1 className={styles.h1}>Login</h1>
 

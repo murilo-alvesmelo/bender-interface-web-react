@@ -7,7 +7,7 @@ const InserirInfo = () => {
   return (
     <>
       <NavBar />
-      <div className={styles.container}>
+      <div className={styles.container} style={{marginBottom:50}}>
         <span className={styles.title}>Inserir Informações do Curso</span>
         <Box title = 'Auxilios UFT' rota= "/informacoes_curso/auxilio_uft"/>
         <Box title = 'Biblioteca UFT' rota= "/informacoes_curso/biblioteca_uft"/>

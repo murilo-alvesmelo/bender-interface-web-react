@@ -9,7 +9,7 @@
 
 .navLinks{
     margin-left: 300px;
-    width:400px;
+    width:auto;
     display: flex;
     align-items: center; 
 }
@@ -21,11 +21,11 @@
 }
 .button{
     width: 100px;
-    margin-left: 300px;
+    margin-left: 100px;
     border-radius: 10px;
 }
 
-@media all and (max-width: 1366px){
+/* @media all and (max-width: 1366px){
 
     .logo{ 
         width: 50px;
@@ -51,4 +51,4 @@
         border-radius: 10px;
     }
     
-}
+} */

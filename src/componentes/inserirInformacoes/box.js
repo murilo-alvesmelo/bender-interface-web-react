@@ -37,6 +37,7 @@ const Box = ({title,rota}) => {
   };
   return (
       <div className={styles.box}>
+        <div style={{marginLeft:'25%'}}>
         <h1 className={styles.titulo}>{title}</h1>
         <form className={styles.divform}>
             <FileUploaded
@@ -45,7 +46,9 @@ const Box = ({title,rota}) => {
             />
             <button className = {styles.button} onClick={(e)=>submitForm(e)}>Enviar</button>
         </form>
-      </div>
+        </div>
+        </div>
   );
 };
 export default Box;
+ 
