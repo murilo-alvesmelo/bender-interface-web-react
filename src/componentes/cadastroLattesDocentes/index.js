@@ -5,6 +5,7 @@ import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row'
 import styles from './index.module.css';
 import { v4 as uuidv4 } from 'uuid';
+import MontarAxiosAPI from '../../utilitarios/axios';
 
 function LattesDocentes(){
 
@@ -12,9 +13,21 @@ function LattesDocentes(){
         { id: uuidv4(), nome: '', lattes: '' },
     ]);
 
-    const handleSubmit = (e) => {   
-        e.preventDefault();
-        console.log("Lattes", inputLattes);
+    const handleSubmit = (event) => {   
+        event.preventDefault();
+        const axiosApi = MontarAxiosAPI();
+        inputLattes.map(i => {
+            axiosApi.post('/lattesDocente/lattesDocente', {
+                nome: i.nome,
+                lattes: i.lattes
+            }).then(response=>{
+              console.log(response.data);
+              alert("Lattes cadastrado")
+              window.location.reload()
+            }).catch(e=>{
+                alert("verifique os dados")
+            })
+        });
     };
 
     const handleChangeInput = (id, event) => {

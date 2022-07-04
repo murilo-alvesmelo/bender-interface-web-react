@@ -5,16 +5,31 @@ import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row'
 import styles from './index.module.css';
 import { v4 as uuidv4 } from 'uuid';
+import MontarAxiosAPI from '../../utilitarios/axios';
+
 
 function EmailProfessores(){
 
+    const [messageErro, setMessageErro] = useState([])
     const [InputEmails, setInputEmails] = useState([
         { id: uuidv4(), nome: '', email: '' },
     ]);
 
-    const handleSubmit = (e) => {   
-        e.preventDefault();
-        console.log("Emails", InputEmails);
+    const handleSubmit = (event) => {   
+        event.preventDefault();
+        const axiosApi = MontarAxiosAPI();
+        InputEmails.map(contato => {
+            axiosApi.post('/professores/professores', {
+                    nome: contato.nome,
+                    email: contato.email
+                }).then(response=>{
+                  console.log(response.data);
+                  alert("Cadastrado")
+                  window.location.reload()
+                }).catch(e=>{
+                    alert("verifique os dados")
+                })
+        });
     };
 
     const handleChangeInput = (id, event) => {
@@ -85,6 +100,9 @@ function EmailProfessores(){
                     type='submit'
                     onClick={handleSubmit}
                 >Enviar</Button>
+            <div className = {{backgroundColor: "red", width: "50%", height: "auto"}}>
+                {messageErro.map(e => (<p>`${e.status}`</p>))}
+            </div>
             </div>
         </>
     )
