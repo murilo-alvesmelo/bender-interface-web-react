@@ -1,4 +1,12 @@
-.App{
-  height: 100vh;
-  background-color: #15202b;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* { 
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(21,32,43) ;
+  color: white;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
